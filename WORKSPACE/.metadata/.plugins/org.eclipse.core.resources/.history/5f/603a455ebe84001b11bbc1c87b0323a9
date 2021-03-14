@@ -1,0 +1,20 @@
+package com.annatotation.practice;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class TennisCoach implements Coach{
+
+	@Override
+	public String getDailyWorkOut() {
+		return "Work out in tennis court for 1 hour Tennis Coach";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+

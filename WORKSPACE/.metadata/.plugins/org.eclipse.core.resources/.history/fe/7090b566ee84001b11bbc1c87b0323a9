@@ -1,0 +1,11 @@
+package com.annatotation.practice;
+
+public class DatabaseFortuneService implements FortuneService {
+
+	@Override
+	public String getFrotune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

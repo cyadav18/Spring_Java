@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Define your beans here -->
+	<bean id="myLoggerConfig"
+		class="com.starting.spring.MyLoggerConfig" init-method="initLogger">
+		<property name="rootLoggerLevel" value="FINE" />
+		<property name="printedLoggerLevel" value="FINE" />
+	</bean>
+	<bean id="myFortune"
+		class="com.starting.spring.HappyFortuneService"></bean>
+
+	<bean id="baseCoach" class="com.starting.spring.BaseballCoach">
+		<constructor-arg ref="myFortune" />
+	</bean>
+	<bean id="TrackCoach" class="com.starting.spring.TrackCoach">
+		<constructor-arg ref="myFortune" />
+	</bean>
+	<bean id="Bike" class="com.meTryingOut.spring.one.Bike">
+	</bean>
+	<bean id="Car" class="com.meTryingOut.spring.one.Car">
+	</bean>
+	<bean id="bikeMechanic"
+		class="com.meTryingOut.spring.one.BikeMechanic">
+		<constructor-arg ref="Bike" />
+	</bean>
+
+	<bean id="carMechanic"
+		class="com.meTryingOut.spring.one.CarMechanic">
+		<constructor-arg ref="Car" />
+	</bean>
+	
+	<bean id="crickeCoach" 
+	class="com.starting.spring.CricketCoach">
+	<property >
+	</bean>
+
+</beans>
+
+
+
+
+

@@ -1,0 +1,11 @@
+package com.annatotation.practice;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TennisCoachTest {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("");
+	}
+
+}

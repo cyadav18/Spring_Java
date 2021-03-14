@@ -1,0 +1,18 @@
+package com.starting.spring;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class HelloSpringHapp {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext context = 
+				new ClassPathXmlApplicationContext("applicationContexr.xml");
+		//retrive the class from applicationContext.xml
+		Coach b = context.getBean("baseCoach", Coach.class);
+		//call the the method
+		System.out.println(b.getDailyWorkOut());
+		//close the application context
+		context.close();
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.starting.spring;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class HelloSpringHapp {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext context = 
+				new ClassPathXmlApplicationContext("applicationContexr.xml");
+		Coach b = context.getBean("baseCoach", Coach.class);
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.meTryingOut.spring.one;
+
+public class MyFortuneService implements FortuneService {
+
+	@Override
+	public String getFortuneService() {
+		// TODO Auto-generated method stub
+		return "Today is my lucky day ! MappyFortuneService";
+	}
+
+}

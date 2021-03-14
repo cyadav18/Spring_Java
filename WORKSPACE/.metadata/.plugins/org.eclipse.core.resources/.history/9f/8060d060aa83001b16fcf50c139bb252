@@ -1,0 +1,16 @@
+package com.starting.spring;
+
+public class TrackCoach implements Coach{
+	
+	FortuneService fortuneService;
+	@Override
+	public String getDailyWorkOut() {
+		return "Spend 30 minutes on Track";
+	}
+
+	@Override
+	public String getDailyFortuneService() {
+		return null;
+	}
+
+}

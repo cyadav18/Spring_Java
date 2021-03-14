@@ -1,0 +1,9 @@
+package com.starting.spring;
+
+public class HelloSpringHapp {
+
+	public static void main(String[] args) {
+
+	}
+
+}

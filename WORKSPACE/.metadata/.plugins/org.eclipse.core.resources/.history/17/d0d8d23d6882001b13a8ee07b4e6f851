@@ -1,0 +1,13 @@
+package com.starting.spring;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+		Coach b = new BaseballCoach();
+		System.out.println(b.getDailyWorkOut());
+		b = new TrackCoach();
+		System.out.println(b);
+				
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.annatotation.practice;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
+
+@Component
+public class BaseBallCoach implements Coach {
+
+	@Override
+	public String getDailyWorkOut() {
+		return "Spend some time in BaseBall field";
+	}
+
+}
+
+class TestBaseballCoach {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext context = ClassPathXmlApplicationContext("applicationContext.xml");
+	}
+}

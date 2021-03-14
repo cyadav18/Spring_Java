@@ -1,0 +1,36 @@
+package com.meTryingOut.spring.one;
+
+public class BikeMechanic {
+	private String name;
+	private String id;
+	private Vehicle vehicle;
+	
+	public Mechanic(Vehicle vehicle) {
+		this.vehicle = vehicle;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String repairVehicle() {
+		String s = "I'm a mechanic " + name;
+		s = s + "this is my id " + id;
+		s += vehicle.goForward();
+		s += vehicle.backward();
+		s += vehicle.stop();
+		return s;
+	}
+}

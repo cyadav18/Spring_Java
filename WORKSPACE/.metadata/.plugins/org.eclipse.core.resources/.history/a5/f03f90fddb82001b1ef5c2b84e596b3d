@@ -1,0 +1,9 @@
+ package com.meTryingOut.spring.one;
+
+public class TestVehicles {
+
+	public static void main(String[] args) {
+		applicationContext
+	}
+
+}

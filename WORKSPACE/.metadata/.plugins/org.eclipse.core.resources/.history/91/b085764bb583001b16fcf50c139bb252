@@ -1,0 +1,37 @@
+package com.starting.spring;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+
+public class CricketCoach implements Coach {
+	FortuneService fortuneService;
+	
+	public CricketCoach() {
+		
+	}
+	
+	public void setFortuneService(FortuneService service) {
+		this.fortuneService = service;
+	}
+	
+	public String getDailyWorkOut() {
+		return "Run along cricket ground 20 times";
+	}
+
+	public String getDailyFortuneService() {
+		return fortuneService.getFortune();
+	}
+
+}
+
+class TestCricke{
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext context = 
+				new ClassPathXmlApplicationContext("applicationContext.xml");
+		CricketCoach c = context.getBean("crickeCoach",Coach.class);
+		System.out.println(c.getDailyWorkOut());
+		System.out.println(c.getDailyFortuneService());
+		context.close();
+	}
+}

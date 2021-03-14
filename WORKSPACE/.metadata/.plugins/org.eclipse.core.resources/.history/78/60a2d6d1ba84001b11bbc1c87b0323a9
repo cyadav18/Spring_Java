@@ -1,0 +1,10 @@
+package com.annatotation.practice;
+
+public class BaseBallCoach implements Coach {
+
+	@Override
+	public String getDailyWorkOut() {
+		return "Spend some time in BaseBall field";
+	}
+
+}

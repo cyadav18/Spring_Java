@@ -1,0 +1,11 @@
+package com.starting.spring;
+
+public class BasketballCoach implements Coach{
+
+	@Override
+	public String getDailyWorkOut() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

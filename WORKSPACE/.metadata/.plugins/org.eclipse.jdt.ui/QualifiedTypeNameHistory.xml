@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.starting.spring.BaseballCoach"/>
+    <fullyQualifiedTypeName name="com.starting.spring.Coach"/>
+    <fullyQualifiedTypeName name="com.starting.spring.TrackCoach"/>
+    <fullyQualifiedTypeName name="com.starting.spring.HappyFortuneService"/>
+    <fullyQualifiedTypeName name="com.meTryingOut.spring.one.Mechanic"/>
+    <fullyQualifiedTypeName name="com.starting.spring.FortuneService"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.Context"/>
+</qualifiedTypeNameHistroy>

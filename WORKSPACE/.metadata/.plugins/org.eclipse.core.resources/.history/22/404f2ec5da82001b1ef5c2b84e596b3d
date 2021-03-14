@@ -1,0 +1,7 @@
+package com.meTryingOut.spring.one;
+
+public interface Vehicle {
+	public String goForward();
+	public String stop();
+	public String geNumber();
+}

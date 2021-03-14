@@ -1,0 +1,21 @@
+package com.starting.spring;
+
+import java.util.logging.Level;
+
+public class MyLoggerConfig {
+	private String rootLoggerLevel;
+	private String printedLoggerLevel;
+
+	public void setRootLoggerLevel(String rootLoggerLevel) {
+		this.rootLoggerLevel = rootLoggerLevel;
+	}
+
+	public void setPrintedLoggerLevel(String printedLoggerLevel) {
+		this.printedLoggerLevel = printedLoggerLevel;
+	}
+	
+	public void initLogger() {
+		Level rootLevel = Level.parse(rootLoggerLevel);
+		Level printedLevel = Level.parse(printedLoggerLevel);
+	}
+}

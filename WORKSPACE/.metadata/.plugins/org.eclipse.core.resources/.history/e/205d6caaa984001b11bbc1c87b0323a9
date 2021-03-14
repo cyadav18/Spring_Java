@@ -1,0 +1,25 @@
+package com.starting.spring;
+
+public class BaseballCoach implements Coach {
+	private FortuneService fortuneService;
+	private static int count = 0;
+	
+	public BaseballCoach() {
+	}
+	
+	public BaseballCoach(FortuneService service) {
+		System.out.println("Base ball coach created");
+		fortuneService = service;
+	}
+
+	@Override
+	public String getDailyWorkOut() {
+		return "Spend 30 minutes with Baseball";
+	}
+
+	@Override
+	public String getDailyFortuneService() {
+		return fortuneService.getFortune();
+	}
+
+}

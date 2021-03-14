@@ -1,0 +1,15 @@
+package com.starting.spring;
+
+public class CricketCoach implements Coach {
+	FortuneService fortuneService;
+	@Override
+	public String getDailyWorkOut() {
+		return "Run along cricket ground 20 times";
+	}
+
+	@Override
+	public String getDailyFortuneService() {
+		return fortuneService.getFortune();
+	}
+
+}

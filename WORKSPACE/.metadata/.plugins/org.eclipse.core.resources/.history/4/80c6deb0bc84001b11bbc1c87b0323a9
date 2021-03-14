@@ -1,0 +1,5 @@
+package com.annatotation.practice;
+
+public interface FortuneService {
+
+}

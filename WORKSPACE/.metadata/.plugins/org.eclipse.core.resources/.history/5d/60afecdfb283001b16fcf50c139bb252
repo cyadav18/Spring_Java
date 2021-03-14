@@ -1,0 +1,17 @@
+package com.starting.spring;
+
+public class CricketCoach implements Coach {
+	FortuneService fortuneService;
+	@Override
+	public String getDailyWorkOut() {
+		// TODO Auto-generated method stub
+		return "Run along cricket ground 20 times";
+	}
+
+	@Override
+	public String getDailyFortuneService() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

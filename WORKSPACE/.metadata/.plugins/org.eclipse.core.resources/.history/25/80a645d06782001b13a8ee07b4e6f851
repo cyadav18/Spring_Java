@@ -1,0 +1,10 @@
+package com.starting.spring;
+
+public class BasketballCoach implements Coach{
+
+	@Override
+	public String getDailyWorkOut() {
+		return "Spend 30 minutes with Baseball";
+	}
+
+}

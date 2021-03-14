@@ -1,0 +1,10 @@
+package com.starting.spring;
+
+public class MyFortuneService implements FortuneService {
+
+	@Override
+	public String getFortune() {
+		return "Today is my lucky day ! MappyFortuneService";
+	}
+
+}

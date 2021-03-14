@@ -1,0 +1,18 @@
+package com.starting.spring;
+
+public class CricketCoach implements Coach {
+	FortuneService fortuneService;
+	
+	public CricketCoach() {
+		
+	}
+	
+	public String getDailyWorkOut() {
+		return "Run along cricket ground 20 times";
+	}
+
+	public String getDailyFortuneService() {
+		return fortuneService.getFortune();
+	}
+
+}

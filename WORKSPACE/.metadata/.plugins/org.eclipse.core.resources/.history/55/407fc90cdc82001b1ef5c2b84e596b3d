@@ -1,0 +1,11 @@
+ package com.meTryingOut.spring.one;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestVehicles {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext();
+	}
+
+}

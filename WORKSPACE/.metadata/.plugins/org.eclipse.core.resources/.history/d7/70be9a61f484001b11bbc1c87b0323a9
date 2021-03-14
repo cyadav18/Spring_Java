@@ -1,0 +1,15 @@
+package com.annatotation.practice;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class RandomFortuneService implements FortuneService {
+
+	String []  
+	@Override
+	public String getFrotune() {
+		// TODO Auto-generated method stub
+		return "WHoo hey Random Fortune Service";
+	}
+
+}

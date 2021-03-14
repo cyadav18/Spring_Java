@@ -1,0 +1,26 @@
+package com.meTryingOut.spring.one;
+
+public class CarMechanic implements Mechanic {
+	
+	private String name; 
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return name;
+	}
+
+	@Override
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String repairVehicle() {
+		String s = "I'm a mechanic " + name+" ";
+		s += bike.goForward()+" ";
+		s += bike.backward()+" ";
+		s += bike.stop();
+		return s;
+	}
+
+}

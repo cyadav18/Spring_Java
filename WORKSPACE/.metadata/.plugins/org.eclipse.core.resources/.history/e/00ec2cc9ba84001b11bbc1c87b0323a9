@@ -1,0 +1,11 @@
+package com.annatotation.practice;
+
+public class BaseBallCoach implements Coach {
+
+	@Override
+	public String getDailyWorkOut() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

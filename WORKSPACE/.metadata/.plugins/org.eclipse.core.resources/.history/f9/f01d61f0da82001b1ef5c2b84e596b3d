@@ -1,0 +1,25 @@
+package com.meTryingOut.spring.one;
+
+public class Bike implements Vehicle{
+	int number = "";
+	@Override
+	public String goForward() {
+		return "Bi";
+	}
+
+	@Override
+	public String stop() {
+		return null;
+	}
+
+	@Override
+	public String backward() {
+		return null;
+	}
+
+	@Override
+	public String geNumber() {
+		return null;
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.meTryingOut.spring.one;
+
+public class Car implements Vehicle {
+	String vehicleNumber;
+
+	@Override
+	public String goForward() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String stop() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String backward() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getVehicleNumber() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setVehicleNumber(String vehicleNumber) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+}

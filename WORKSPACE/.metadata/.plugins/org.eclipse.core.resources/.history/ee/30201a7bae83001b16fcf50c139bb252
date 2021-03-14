@@ -1,0 +1,10 @@
+package com.meTryingOut.spring.one;
+
+public interface Mechanic {
+	
+	public String getName(String s);
+
+	public void setName();
+
+	public String repairVehicle();
+}
